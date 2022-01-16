@@ -1,0 +1,6 @@
+framework module Pods_tabelViewKingDomeCities {
+  umbrella header "Pods-tabelViewKingDomeCities-umbrella.h"
+
+  export *
+  module * { export * }
+}

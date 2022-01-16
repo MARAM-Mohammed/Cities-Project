@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tabelViewKingDomeCities" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSG-gn-vjh" userLabel="Header">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="248"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saudi Arabia Cities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZU-t6-rFF">
+                                        <rect key="frame" x="24" y="184.5" width="290.5" height="39.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12492028619999999" green="0.3097925782" blue="0.21175122260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="sZU-t6-rFF" secondAttribute="bottom" constant="24" id="3Qi-TS-HZ4"/>
+                                    <constraint firstAttribute="height" constant="248" id="CAI-nI-flj"/>
+                                    <constraint firstItem="sZU-t6-rFF" firstAttribute="leading" secondItem="oSG-gn-vjh" secondAttribute="leading" constant="24" id="qTw-Q3-XjJ"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wf9-BS-i1M">
+                                <rect key="frame" x="0.0" y="248" width="414" height="614"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cityCell" rowHeight="112" id="FvS-pe-twh" customClass="CityCell" customModule="tabelViewKingDomeCities" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="112"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FvS-pe-twh" id="WPw-L3-h0P">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cQR-1t-Xrs">
+                                                    <rect key="frame" x="20" y="7.5" width="202" height="97"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="riyadh" translatesAutoresizingMaskIntoConstraints="NO" id="MoH-cb-T2p">
+                                                            <rect key="frame" x="0.0" y="0.0" width="97" height="97"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="97" id="TeL-5L-Cb8"/>
+                                                                <constraint firstAttribute="width" constant="97" id="fin-wX-hg8"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Riyadh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgG-hm-hVh">
+                                                            <rect key="frame" x="105" y="38.5" width="97" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.94457246043486631" green="0.93891633791729234" blue="0.95022858295244039" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstItem="cQR-1t-Xrs" firstAttribute="centerY" secondItem="WPw-L3-h0P" secondAttribute="centerY" id="ODx-Jd-nCA"/>
+                                                <constraint firstItem="cQR-1t-Xrs" firstAttribute="leading" secondItem="WPw-L3-h0P" secondAttribute="leadingMargin" id="oFu-io-hmJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.17018988613289066" green="0.40780448523470431" blue="0.84257467997442814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="cityImageView" destination="MoH-cb-T2p" id="nM7-XL-QnV"/>
+                                            <outlet property="cityNameLabel" destination="jgG-hm-hVh" id="Dta-rk-qDu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oSG-gn-vjh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EZX-0k-W6L"/>
+                            <constraint firstItem="Wf9-BS-i1M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Idf-d1-mjL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wf9-BS-i1M" secondAttribute="trailing" id="JMx-ci-fdn"/>
+                            <constraint firstItem="oSG-gn-vjh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LWr-lN-UWf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wf9-BS-i1M" secondAttribute="bottom" id="NeP-Eu-dgW"/>
+                            <constraint firstItem="oSG-gn-vjh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="k6S-s3-Iu5"/>
+                            <constraint firstItem="Wf9-BS-i1M" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kWE-TB-Hfo"/>
+                            <constraint firstItem="Wf9-BS-i1M" firstAttribute="top" secondItem="oSG-gn-vjh" secondAttribute="bottom" id="xoh-EA-Mvh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="citiesTabelView" destination="Wf9-BS-i1M" id="UjZ-Ny-nO1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-955.07246376811599" y="296.65178571428572"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="7db-6n-B2V">
+            <objects>
+                <viewController storyboardIdentifier="citesVC" id="I2J-7f-3zR" customClass="DetailsViewController" customModule="tabelViewKingDomeCities" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WVX-wS-fKN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Our-pd-59K" userLabel="Header">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="248"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Riyadh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pb-vw-DYl">
+                                        <rect key="frame" x="24" y="184" width="106" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12549019610000001" green="0.30980392159999998" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="2Pb-vw-DYl" firstAttribute="leading" secondItem="Our-pd-59K" secondAttribute="leading" constant="24" id="HTM-di-IBD"/>
+                                    <constraint firstAttribute="height" constant="248" id="Tac-qE-u9c"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Pb-vw-DYl" secondAttribute="bottom" constant="24" id="bLX-l2-6bH"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="riyadh" translatesAutoresizingMaskIntoConstraints="NO" id="kI9-DB-6Yr">
+                                <rect key="frame" x="0.0" y="248" width="414" height="291"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="291" id="HYR-4Y-fNl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GQ-Ip-Jq2">
+                                <rect key="frame" x="8" y="547" width="398" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GBw-fX-bR8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Our-pd-59K" firstAttribute="trailing" secondItem="GBw-fX-bR8" secondAttribute="trailing" id="0yb-93-9CR"/>
+                            <constraint firstItem="GBw-fX-bR8" firstAttribute="trailing" secondItem="3GQ-Ip-Jq2" secondAttribute="trailing" constant="8" id="42t-5V-UTQ"/>
+                            <constraint firstItem="Our-pd-59K" firstAttribute="top" secondItem="WVX-wS-fKN" secondAttribute="top" id="9uJ-tJ-4CL"/>
+                            <constraint firstItem="kI9-DB-6Yr" firstAttribute="top" secondItem="Our-pd-59K" secondAttribute="bottom" id="DOG-tk-5sw"/>
+                            <constraint firstItem="Our-pd-59K" firstAttribute="leading" secondItem="GBw-fX-bR8" secondAttribute="leading" id="P3L-YA-B9P"/>
+                            <constraint firstItem="kI9-DB-6Yr" firstAttribute="leading" secondItem="GBw-fX-bR8" secondAttribute="leading" id="hmh-Tl-P2l"/>
+                            <constraint firstItem="3GQ-Ip-Jq2" firstAttribute="top" secondItem="kI9-DB-6Yr" secondAttribute="bottom" constant="8" id="vcJ-eS-UDz"/>
+                            <constraint firstItem="3GQ-Ip-Jq2" firstAttribute="leading" secondItem="GBw-fX-bR8" secondAttribute="leading" constant="8" id="ve3-nT-zVR"/>
+                            <constraint firstItem="kI9-DB-6Yr" firstAttribute="trailing" secondItem="GBw-fX-bR8" secondAttribute="trailing" id="yUo-Mr-FxZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityDetailsLabel" destination="3GQ-Ip-Jq2" id="Iw8-Qr-sxT"/>
+                        <outlet property="cityImageView" destination="kI9-DB-6Yr" id="VV3-fX-eRv"/>
+                        <outlet property="cityNameLabel" destination="2Pb-vw-DYl" id="8mM-30-7Rf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9O1-x4-HnY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="297"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="riyadh" width="750" height="492"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
